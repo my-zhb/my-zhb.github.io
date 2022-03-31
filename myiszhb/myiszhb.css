@@ -7,6 +7,12 @@
 	transition: all 0.3s;
 }
 
+#article-container img{
+	margin:0 auto;
+	margin-right:8px;
+	margin-top:5px;
+}
+
 #heartbeat {
     color: red;
     animation: iconAnimate 1.33s ease-in-out infinite
