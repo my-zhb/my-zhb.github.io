@@ -1,0 +1,454 @@
+/* 分页标签下面的1234的样式 以及pagination.styl第9行样式*/
+.cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space){
+	border-radius: 8px;
+	background: var(--card-bg);
+	-webkit-box-shadow: var(--card-box-shadow);
+	box-shadow: var(--card-box-shadow);
+	transition: all 0.3s;
+}
+
+#heartbeat {
+    color: red;
+    animation: iconAnimate 1.33s ease-in-out infinite
+}
+
+@-moz-keyframes iconAnimate {
+    0%,
+    100% {
+        transform: scale(1)
+    }
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@-webkit-keyframes iconAnimate {
+    0%,
+    100% {
+        transform: scale(1)
+    }
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@-o-keyframes iconAnimate {
+    0%,
+    100% {
+        transform: scale(1)
+    }
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes iconAnimate {
+    0%,
+    100% {
+        transform: scale(1)
+    }
+    10%,
+    30% {
+        transform: scale(.9)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: scale(1.1)
+    }
+    50%,
+    70% {
+        transform: scale(1.1)
+    }
+}
+/* 鼠标样式*/
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),default
+}
+.hide-block>.hide-button.open,
+.hide-inline>.hide-button.open {
+    display: block
+}
+a,
+button,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),default
+}
+
+
+/* index-vedio 适配 */
+#index-video {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    #index-video {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bg-cover {
+        background-image: none !important;
+    }
+}
+
+/* 首页文章卡片 */
+[data-theme="light"]
+  #recent-posts > .recent-post-item{
+    background:rgba(250, 250, 250, 0.85);
+}
+[data-theme="dark"]
+  #recent-posts > .recent-post-item{
+    background:rgba(20, 20, 20, 0.75);
+}
+
+/* 首页侧栏卡片 */
+[data-theme="light"]
+  .card-widget{
+    background:rgba(250, 250, 250, 0.85)!important;
+}
+[data-theme="dark"]
+  .card-widget{
+    background:rgba(20, 20, 20, 0.9)!important;
+}
+[data-theme="dark"]
+  #aside-content #card-toc .toc-content .toc-link.active {
+    background:#313534;
+}
+/* 文章页面正文背景 */
+[data-theme="light"]
+  div#post{
+    background: rgba(250, 250, 250, 0.85);
+}
+[data-theme="dark"]
+  div#post{
+    background: rgba(20, 20, 20, 0.8);
+}
+/* 分页页面 */
+[data-theme="light"]
+  div#page{
+    background: rgba(250, 250, 250, 0.85);
+}
+	
+[data-theme="dark"]
+  div#page{
+    background: rgba(20, 20, 20, 0.8);
+}
+/* 归档页面 */
+[data-theme="light"]
+  div#archive{
+    background: rgba(250, 250, 250, 0.85);
+}
+[data-theme="dark"]
+  div#archive{
+    background: rgba(20, 20, 20, 0.8);
+}
+/* 标签页面 */
+[data-theme="light"]
+  div#tag{
+    background: rgba(250, 250, 250, 0.85);
+}
+[data-theme="dark"]
+  div#tag{
+    background: rgba(20, 20, 20, 0.8);
+}
+/* 分类页面 */
+[data-theme="light"]
+  div#category{
+    background: rgba(250, 250, 250, 0.85);
+}
+[data-theme="dark"]
+  div#category{
+    background: rgba(20, 20, 20, 0.8);
+}
+/* 有序列表序号 */
+ol li::before{
+  border: 0.2em solid #49b1f5;
+  margin-top: 0.85em !important;
+  width: 1.2em !important;
+  height: 1.2em !important;
+  background: transparent !important;
+  border-radius: 1em !important;
+  line-height: 1.3em !important;
+  font-size: 0.75em !important;
+}
+[data-theme="light"]
+  li::before {
+    color: rgb(50,50,50) !important;
+  }
+/* 引入背景 */
+[data-theme="dark"]
+  blockquote{
+    background-color: rgba(30,30,30,0.65) !important;
+}
+
+
+/*3s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+#page-header,
+#web_bg {
+    -webkit-animation: imgblur 2s 1 ease-in-out;
+    animation: imgblur 2s 1 ease-in-out;
+}
+
+@keyframes imgblur {
+    0% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+
+/*适配使用-webkit内核的浏览器 */
+
+@-webkit-keyframes imgblur {
+    0% {
+        -webkit-filter: blur(5px);
+    }
+    100% {
+        -webkit-filter: blur(0px);
+    }
+}
+
+@font-face {
+    font-family: 'tzy';
+    /* 字体名自定义即可 */
+    src: url('https://cdn.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/font/ZhuZiAWan.woff2');
+    /* 字体文件路径 */
+    font-display: swap;
+}
+
+body,
+.gitcalendar {
+    font-family: tzy !important;
+}
+
+#site-info {
+    z-index: 66;
+}
+
+.table-wrap img {
+    margin: .6rem auto .1rem !important;
+}
+
+
+/* 标签外挂 网站卡片 start */
+
+
+[data-theme='dark'] .site-card-group .site-card .info .title {
+    color: #f0f0f0 !important;
+}
+
+[data-theme='dark'] .site-card-group .site-card .info .desc {
+    color: rgba(255, 255, 255, .7) !important;
+}
+
+/* 标签外挂 网站卡片 end */
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+[data-theme='dark'] .recent-posts .recent-post-item .recent-post-info .content {
+    color: rgba(255, 255, 255, 0.8) !important
+}
+
+
+/* 修改crad板块中的github font-size */
+.card-content .fa-github {
+    margin: 0 0.5rem;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.fa-heart {
+    color: #fc0505 !important
+}
+.fa-qq {
+    color: #10a4ff
+}
+.fa-weixin {
+    color: #00bf03
+}
+.fa-alipay,
+.fa-envelope {
+    color: #4890f7
+}
+.fa-weibo {
+    color: #F03AB9
+}
+.fa-rss {
+    color: #e66c1b
+}
+[data-theme='dark'] .announcement_content {
+    color: #ddd;
+}
+[data-theme='dark'] #aside_content #card-toc .toc-content .toc-link.active {
+    color: #fff;
+}
+
+/* footer */
+[data-theme='dark'] #footer-wrap {
+    color: #ddd;
+}
+#footer-wrap .framework-info a {
+    color: #00e7ff;
+}
+
+
+/* 文章内容部分 表格 */
+.ethan_tzy_table tr {
+    font-size: 1.8em;
+}
+@media screen and (max-width:768px) {
+    .ethan_tzy_table tr {
+        font-size: 0.8rem !important;
+    }
+}
+.ethan_tzy_no_th_bg table thead,
+.ethan_tzy_table table thead,
+#article-container .ethan_tzy_table code {
+    background: transparent !important;
+    font-weight: bold;
+}
+.ethan_tzy_table.two table thead,
+.ethan_tzy_table.two table tr,
+.ethan_tzy_table.two table tr td {
+    width: 50%;
+}
+.ethan_tzy_table.two .github-emoji {
+    position: relative;
+    vertical-align: middle;
+    width: 1.4em;
+    height: 1.4em;
+}
+/* 代码块颜色 */
+figure.highlight pre .addition {
+    color: #00bf03 !important;
+}
+[data-theme='dark'] .tip.cogs code {
+    background: rgba(27, 31, 35, .05) !important;
+}
+[data-theme=dark] #article-container code {
+    background: rgba(27, 31, 35, .05) !important;
+}
+/*标签整体样式*/
+.github-badge {
+    margin-left: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    text-shadow: none;
+    color: #fff;
+    line-height: 15px;
+    background-color: #abbac3;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+/* 超链接下划线隐藏 */
+.github-badge a {
+    text-decoration: none;
+}
+/* 标签左侧样式 */
+.github-badge .badge-subject {
+    background-color: #4d4d4d;
+    padding: 4px 4px 4px 6px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+/* 标签右侧样式 */
+.github-badge .badge-value {
+    padding: 4px 6px 4px 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* 标签背景色，随意自定义，渐变色也可以 */
+.github-badge .bg-blue {
+    background-color: #007ec6;
+}
+.github-badge .bg-green {
+    background-color: #4dc820;
+}
+.github-badge .bg-orange {
+    background-color: orange;
+}
+.github-badge .bg-gradient {
+    background: linear-gradient(to right, #3ca5f6, #a86af9);
+}
+.github-badge .bg-violet {
+    background-color: #8833d7;
+}
+#article-container .tzy_uni .btns a img {
+    margin: 0 auto !important;
+}
+
+
+/* 标签背景色，随意自定义，渐变色也可以 */
+.github-badge .bg-blue {
+    background-color: #007ec6;
+}
+.github-badge .bg-green {
+    background-color: #4dc820;
+}
+.github-badge .bg-orange {
+    background-color: orange;
+}
+.github-badge .bg-gradient {
+    background: linear-gradient(to right, #3ca5f6, #a86af9);
+}
+.github-badge .bg-violet {
+    background-color: #8833d7;
+}
+#article-container .tzy_uni .btns a img {
+    margin: 0 auto !important;
+}
+
+

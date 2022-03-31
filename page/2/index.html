@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>七月のBlog</title><meta name="author" content="七月"><meta name="copyright" content="七月"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="七月のBlog">
+<meta property="og:url" content="https://www.isfate.xyz/page/2/index.html">
+<meta property="og:site_name" content="七月のBlog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg">
+<meta property="article:author" content="七月">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.isfate.xyz/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.zhimg.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?666c7691895360baeecc42f2ba8ba136";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+
+const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://unpkg.zhimg.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://unpkg.zhimg.com/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://unpkg.zhimg.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://unpkg.zhimg.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '七月のBlog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-03-31 15:40:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/myiszhb/myiszhb.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="七月のBlog" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="wizard-scene"><div class="wizard-objects"><div class="wizard-square"></div><div class="wizard-circle"></div><div class="wizard-triangle"></div></div><div class="wizard"><div class="wizard-body"></div><div class="wizard-right-arm"><div class="wizard-right-hand"></div></div><div class="wizard-left-arm"><div class="wizard-left-hand"></div></div><div class="wizard-head"><div class="wizard-beard"></div><div class="wizard-face"><div class="wizard-adds"></div></div><div class="wizard-hat"><div class="wizard-hat-of-the-hat"></div><div class="wizard-four-point-star --first"></div><div class="wizard-four-point-star --second"></div><div class="wizard-four-point-star --third"></div></div></div></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://s3.bmp.ovh/imgs/2021/08/7748062053444640.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">七月のBlog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">七月のBlog</h1><div id="site_social_icons"><a class="social-icon" href="mailto:myiszhb@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=410808509" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/1ad5be0d.html" title="mybatis-plus学习-二">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?33" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mybatis-plus学习-二"></a></div><div class="recent-post-info"><a class="article-title" href="/article/1ad5be0d.html" title="mybatis-plus学习-二">mybatis-plus学习-二</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-05-07T12:34:04.000Z" title="发表于 2021-05-07 20:34:04">2021-05-07</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/mybatis-plus/">mybatis-plus</a></span></div><div class="content">条件构造器在mp中，wrapper接口实现类关系如下：
+
+是由AbstractWrapper和AbstractChainWrapper是重点实现的；
+AbstractWrapper官方文档
+allEq1234567allEq(Map&lt;R, V&gt; params)allEq(Map&lt;R, V&gt; params, boolean null2IsNull)allEq(boolean condition, Map&lt;R, V&gt; params, boolean null2IsNull)    allEq(BiPredicate&lt;R, V&gt; filter, Map&lt;R, V&gt; params)allEq(BiPredicate&lt;R, V&gt; filter, Map&lt;R, V&gt; params, boolean null2IsNull)allEq(boolean condition, BiPredicate&lt;R, V&gt; filter, Map&lt;R, V&gt; params, boolean null2IsNu ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/83dcefb7.html" title="mybatis-plus学习-一">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?32" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mybatis-plus学习-一"></a></div><div class="recent-post-info"><a class="article-title" href="/article/83dcefb7.html" title="mybatis-plus学习-一">mybatis-plus学习-一</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-05-07T11:34:04.000Z" title="发表于 2021-05-07 19:34:04">2021-05-07</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/mybatis-plus/">mybatis-plus</a></span></div><div class="content">了解mybatis-plusmybatis-plus简介​    官网网址，mybatis-plus(简称MP)是一个mybatis的增强工具，在mybatis的基础上只做增强不做改变，为简化开发、提高效率而生，
+特性
+无侵入：只做增强不做改变，引入它不会对现有工程产生影响；
+损耗小：启动即会自动注入基本的CRUD，性能基本无消耗，直接面向对象操作；
+强大的CRUD操作：内置通过的mapper、service，仅仅通过少量配置即可实现单表大部分CRUD操作，更有强大的条件构造器，满足各类使用需求；
+支持Lambda形式调用：通过lambda表达式，方便的编写各类查询条件，无需再担心字段写错；
+支持多种数据库：Mysql、maruaDB、Oracle、DB2、H2、HSQL、SQLite、Postgr、SQLServer等多种数据库；
+支持主键自动生成：支持多达4种主键策略（内涵分布式唯一ID生成器-Sequence），可自由配置，完美解决主键问题；
+支持XML热加载：mapper对应的xml支持热加载，对简单的crud操作，甚至可以无xml启动；
+支持ActiveRecord模式：支持 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/3cf22ab5.html" title="juc">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?26" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="juc"></a></div><div class="recent-post-info"><a class="article-title" href="/article/3cf22ab5.html" title="juc">juc</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-01-04T14:06:33.000Z" title="发表于 2021-01-04 22:06:33">2021-01-04</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%B9%B6%E5%8F%91/">并发</a></span></div><div class="content">什么是JUCjava.util.concurrent在并发编程中使用的工具类
+线程和进程进程是要给应用程序。线程是一个进程中的一个执行单元。一个进程可以有多个线程。  
+Synchronized和Lock区别
+Synchronized内置的Java关键字，Lock是一个Java类
+Synchronized无法判断获取锁的状态，Lock 可以判断是否获取到锁
+Synchronized会自动释放锁，Lock必须手动释放锁！如果没有释放锁会造成死锁
+Synchronized 线程1(获得锁，阻塞)，线程2(一直等待)，Lock锁就不会一直等待。
+Synchronized可重入锁，不可以中断的，非公平；Lock可重入锁，可以判断锁，非公平（可以自己设置，默认非公平）
+Synchronized适合锁少量的代码同步问题，Lock适合锁大量的同步代码块。
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//简单的Lock代码public class User & ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/9f27402d.html" title="io流">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?25" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="io流"></a></div><div class="recent-post-info"><a class="article-title" href="/article/9f27402d.html" title="io流">io流</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-22T12:26:26.000Z" title="发表于 2020-12-22 20:26:26">2020-12-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">什么是IO流
+IO流的分类
+一种方式是按照流的方向进行分类的（输入流，输出流）
+ 以内存作为参照物：
+
+往内存中去的，叫做输入（Input），或者叫做读（Read）
+从内存中出来，叫做输出（Output），或者叫做写（Write)
+
+
+另外一种方式是按照读取数据方式不同进行分类：（字节流，字符流）
+
+有的流是按照字节的方式读取数据，一次读取1个字节byte，等同于一次读取8个二进制，这种刘是万能的，什么类型的文件都可以读取。（字节流）
+  例子：
+  ​    假设文本：a中国bc  ​    使用字节流读取：  ​    第一次读取到 a  ​    第二次读取到 中的一半  ​    第三次读取到 中的另外一半
+
+有的流是按照字符的方式读取数据，一次读取一个字符，这种流是为了方便读取普通文本而存在的，这种流只能读取本文文件。（字符流）
+  例子：
+  ​    假设文本：a中国bc  ​    使用字节流读取：  ​    第一次读取到 a  ​    第二次读取到 中
+
+
+
+
+Java IO流四大家族
+java.io.InputStream（字节输入流）
+java.io.Outp ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/d366874c.html" title="集合">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?24" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="集合"></a></div><div class="recent-post-info"><a class="article-title" href="/article/d366874c.html" title="集合">集合</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-16T12:57:55.000Z" title="发表于 2020-12-16 20:57:55">2020-12-16</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">什么是集合？有什么用？
+数组其实就是一个集合。集合实际上就是一个容器，可以来容纳其他类型的数据。
+集合不能直接存储基本数据类型，另外集合也不能直接存储Java对象。集合当作存储的都是Java对象的内存地址(引用)。 12345注意：    集合在Java中本身就是一个容器，是一个对象。    集合中任何时候存储的都是引用。list.add(100);//属于自动装箱Integer,属于对象
+在Java中每一个不同的集合，底层会对应不同的数据结果。往不同的集合中存储元素，等于往不同的数据结构中存储。
+在Java中集合分为两大类：
+一类是单个方式存储元素，这一类集合的super父接口：java.util.Collection。
+一类是以键值对方式存储元素，这一类集合的super父接口：java.util.Map。
+
+
+
+集合的继承结构list和set
+Map
+所有集合的实现类
+ArrayList: 底层是数组。
+LinkedList: 底层是双向链表。
+Vector: 底层是数组，线程安全的，效率较低。
+HashSet: 底层是HashMap，放在HashSet集合中的元素等同于放在了Ha ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/52c58cb2.html" title="包装类">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?23" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="包装类"></a></div><div class="recent-post-info"><a class="article-title" href="/article/52c58cb2.html" title="包装类">包装类</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-14T12:24:34.000Z" title="发表于 2020-12-14 20:24:34">2020-12-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">123Java中为8种基本数据类型准备了8种包装类型。8种包装类型都属于引用类型。思考：为什么需要再提供8种包装类型呢？    因为8种基本数据类型不够用，所以SUN又提供了8种包装类型。
+Java中对每种基本类型都有一个对应的包装类
+byte -&gt; Byte 继承number
+short -&gt; Short 继承number
+int -&gt; Integer 继承number
+long -&gt; Long 继承number
+float -&gt; Float 继承number
+double -&gt; Double 继承number
+boolean -&gt; Boolean 继承Object
+char -&gt; Character  继承Object
+
+什么是包装类？Java种的基本数据类型并不制裁面向对象编程，不具备“对象”的特征，不携带属性、没有方法可以调用，无法提供向上转型取到Object提供的方法。个人理解：就是把基本数据类型封装成对象，有属性，有方法，更能利于开发。
+基本数据类型和包装类的区别？
+定义不同。包装类属于对象，基本数据类型不是。
+声明和使用方式 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/df717f7d.html" title="Java访问控制权限">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?21" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java访问控制权限"></a></div><div class="recent-post-info"><a class="article-title" href="/article/df717f7d.html" title="Java访问控制权限">Java访问控制权限</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-14T12:24:21.000Z" title="发表于 2020-12-14 20:24:21">2020-12-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">
+
+
+
+修饰符
+类的内部
+同一包
+子类
+任何地方
+
+
+
+
+private
+yes
+no
+no
+no
+
+
+default
+yes
+yes
+no
+no
+
+
+protected
+yes
+yes
+yes
+no
+
+
+public
+yes
+yes
+yes
+yes
+
+
+
+
+访问控制权限修饰符可以修饰什么？
+
+属性（4个都能用）
+方法（4个都能用）
+类（public和默认能用，其他不行）
+接口（public和默认能用，其他不行）
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/7acf6980.html" title="类型与类型之间的关系">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?22" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="类型与类型之间的关系"></a></div><div class="recent-post-info"><a class="article-title" href="/article/7acf6980.html" title="类型与类型之间的关系">类型与类型之间的关系</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-14T12:24:21.000Z" title="发表于 2020-12-14 20:24:21">2020-12-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">is acat is a Animal  （猫是一只动物）凡是能够满足is a的表示“继承关系”A extends B  
+has aI has a Pen （我有一支笔）凡是能够满足has a 关系的表示“关联关系”关联关系通过以“属性”的形式存在。A{    B b;}
+like aCooker like a FoodMenu（厨司像一个菜单一样）凡是能够满足like a 关系的表示“实现关系”实现关系通常是：类实现接口。A implement B  
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/88b1c03b.html" title="String、StringBuffer、StringBuilder区别">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?20" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="String、StringBuffer、StringBuilder区别"></a></div><div class="recent-post-info"><a class="article-title" href="/article/88b1c03b.html" title="String、StringBuffer、StringBuilder区别">String、StringBuffer、StringBuilder区别</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-13T11:33:11.000Z" title="发表于 2020-12-13 19:33:11">2020-12-13</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">12345678910111213思考：我们在实际的开发中，如果需要进行字符串的频繁拼接，会有什么问题？  因为java中的字符串是不可变的，每一次拼接都会产生新字符串。这样会占用大量的方法区内存，造成内存空间浪费。例如：    String s = &quot;abc&quot;;    s += &quot;hello&quot;;    就以上两行代码，就导致在方法区字符串常量池当中创建了3个对象：    “abc”  &quot;hello&quot; &quot;abchello&quot;所以在大量的字符串拼接中，我们可以采用JDK自带的：    java.long.StringBuffer    java.long.StringBuilder
+String、StringBuffer、StringBuilder
+StringBuffer、StringBuilder底层实际上是一个byte[]数组，往StringBuffer、StringBuilder中放字符串，实际上是放在byte数组当中的
+StringBuffer、StringBuilder的初始容量是16。
+Strin ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/5cf35ca9.html" title="String类">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?19" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="String类"></a></div><div class="recent-post-info"><a class="article-title" href="/article/5cf35ca9.html" title="String类">String类</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-12T13:17:01.000Z" title="发表于 2020-12-12 21:17:01">2020-12-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">String是上面
+String表示字符串类型，属于引用数据类型，不属于基本数据类型。
+Java中规定，双引号括起来的字符串，是不可变的，也就是说“abc”自出生到最终死亡，都是不能改变的。
+在JDK当中双引号括起来的字符串，例如：“abc” 都是直接存储在方法区的字符串常量池当中的。
+
+内存分析：1234567891011public class Test&#123;    public static void main(String[] args)&#123;        //s1 和s2 一共创建了3个字符串对象，都在字符串常量池当做        String s1 = &quot;abcdef&quot;;        String s2 = &quot;abcdef&quot;+&quot;xy&quot;;        //凡是使用双引号括起来的都在字符串常量池中有一份.        //new对象的时候一定在堆内存当中开辟空间        //所以 栈当中s3存的是 推内存的地址 ，而堆内存当做存的是xy在字符串常量池中的地址        String s3 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">七月</div><div class="author-info__description">起心动念皆是因,当下所受皆是果</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:myiszhb@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=410808509" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">大家好我是七月，请多多关照！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/article/a464cc4f.html" title="ubuntu开启root登录"><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ubuntu开启root登录"/></a><div class="content"><a class="title" href="/article/a464cc4f.html" title="ubuntu开启root登录">ubuntu开启root登录</a><time datetime="2022-03-03T12:07:43.000Z" title="发表于 2022-03-03 20:07:43">2022-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/5cf35c25.html" title="Java中文汉字转拼音工具类"><img src="http://api.mtyqx.cn/api/random.php?28" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java中文汉字转拼音工具类"/></a><div class="content"><a class="title" href="/article/5cf35c25.html" title="Java中文汉字转拼音工具类">Java中文汉字转拼音工具类</a><time datetime="2021-12-09T05:34:00.000Z" title="发表于 2021-12-09 13:34:00">2021-12-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/5cf352a9.html" title="mybatis中sql语句调用Java代码"><img src="http://api.mtyqx.cn/api/random.php?27" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mybatis中sql语句调用Java代码"/></a><div class="content"><a class="title" href="/article/5cf352a9.html" title="mybatis中sql语句调用Java代码">mybatis中sql语句调用Java代码</a><time datetime="2021-12-07T03:21:00.000Z" title="发表于 2021-12-07 11:21:00">2021-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/2db9fece.html" title="rabbitmq学习(三)"><img src="http://api.mtyqx.cn/api/random.php?31" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitmq学习(三)"/></a><div class="content"><a class="title" href="/article/2db9fece.html" title="rabbitmq学习(三)">rabbitmq学习(三)</a><time datetime="2021-08-06T11:20:27.000Z" title="发表于 2021-08-06 19:20:27">2021-08-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/534adee5.html" title="rabbitmq学习(二)"><img src="http://api.mtyqx.cn/api/random.php?30" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitmq学习(二)"/></a><div class="content"><a class="title" href="/article/534adee5.html" title="rabbitmq学习(二)">rabbitmq学习(二)</a><time datetime="2021-08-06T11:03:10.000Z" title="发表于 2021-08-06 19:03:10">2021-08-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">30</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/mybatis/"><span class="card-category-list-name">mybatis</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">基础</span><span class="card-category-list-count">23</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%B7%A5%E5%85%B7%E7%B1%BB/"><span class="card-category-list-name">工具类</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%B9%B6%E5%8F%91/"><span class="card-category-list-name">并发</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"><span class="card-category-list-name">微服务</span><span class="card-category-list-count">4</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/mybatis-plus/"><span class="card-category-list-name">mybatis-plus</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"><span class="card-category-list-name">中间件</span><span class="card-category-list-count">3</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/certbot/" style="font-size: 1.1em; color: #999">certbot</a> <a href="/tags/emqx/" style="font-size: 1.1em; color: #999">emqx</a> <a href="/tags/io/" style="font-size: 1.1em; color: #999">io</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/juc/" style="font-size: 1.1em; color: #999">juc</a> <a href="/tags/mybatis/" style="font-size: 1.1em; color: #999">mybatis</a> <a href="/tags/mybatis-plus/" style="font-size: 1.2em; color: #999da3">mybatis-plus</a> <a href="/tags/rabbitmq/" style="font-size: 1.3em; color: #99a1ac">rabbitmq</a> <a href="/tags/ubuntu/" style="font-size: 1.1em; color: #999">ubuntu</a> <a href="/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/" style="font-size: 1.1em; color: #999">工具类</a> <a href="/tags/%E5%BC%82%E5%B8%B8/" style="font-size: 1.1em; color: #999">异常</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.4em; color: #99a5b6">微服务</a> <a href="/tags/%E8%AF%81%E4%B9%A6/" style="font-size: 1.1em; color: #999">证书</a> <a href="/tags/%E9%9B%86%E5%90%88/" style="font-size: 1.1em; color: #999">集合</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">十二月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">20</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">38</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">115k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-03-31T07:40:36.765Z"></div></div></div></div></div></div></main><footer id="footer" style="background: rgba(255,255,255,0)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 七月</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})
+setTimeout(function(){preloader.endLoading();}, 3000);</script></div><div class="js-pjax"></div><script data-pjax defer src="/js/custom/fixed_card_widget.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '700ms');
+    arr[i].setAttribute('data-wow-delay', '700ms');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>

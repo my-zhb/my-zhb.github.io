@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>七月のBlog</title><meta name="author" content="七月"><meta name="copyright" content="七月"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="七月のBlog">
+<meta property="og:url" content="https://www.isfate.xyz/page/3/index.html">
+<meta property="og:site_name" content="七月のBlog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg">
+<meta property="article:author" content="七月">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.isfate.xyz/page/3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.zhimg.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?666c7691895360baeecc42f2ba8ba136";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+
+const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://unpkg.zhimg.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://unpkg.zhimg.com/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://unpkg.zhimg.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://unpkg.zhimg.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '七月のBlog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-03-31 15:40:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/myiszhb/myiszhb.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="七月のBlog" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="wizard-scene"><div class="wizard-objects"><div class="wizard-square"></div><div class="wizard-circle"></div><div class="wizard-triangle"></div></div><div class="wizard"><div class="wizard-body"></div><div class="wizard-right-arm"><div class="wizard-right-hand"></div></div><div class="wizard-left-arm"><div class="wizard-left-hand"></div></div><div class="wizard-head"><div class="wizard-beard"></div><div class="wizard-face"><div class="wizard-adds"></div></div><div class="wizard-hat"><div class="wizard-hat-of-the-hat"></div><div class="wizard-four-point-star --first"></div><div class="wizard-four-point-star --second"></div><div class="wizard-four-point-star --third"></div></div></div></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://s3.bmp.ovh/imgs/2021/08/7748062053444640.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">七月のBlog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">七月のBlog</h1><div id="site_social_icons"><a class="social-icon" href="mailto:myiszhb@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=410808509" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/d57302f2.html" title="多种数据类型混合运算">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?18" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="多种数据类型混合运算"></a></div><div class="recent-post-info"><a class="article-title" href="/article/d57302f2.html" title="多种数据类型混合运算">多种数据类型混合运算</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-11T12:18:34.000Z" title="发表于 2020-12-11 20:18:34">2020-12-11</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">byte、short、char混合运算结论:byte、char、short 做混合运算的时候，各自先转换成int再做运算。123456789101112131415161718public class Test&#123;    public static void mian(String[]args)&#123;        char c1 = &#x27;a&#x27;;        byte b = 1;        //这里可以输出98，因为ascll表a的值是97        System.out.println(c1+b);                //short s = c1+b;这里编译出错，编译器不知道这个结果是什么。               // short d = (short)c1+b;这里也是编译出错，因为它先把c1转换成了short然后在和b相加，最终结果还是不知道。                short f = (short)(c1+b);//这里可以正常编译，因为它是把c1+b进行相加后 在强转成short的             ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/c3d59d66.html" title="二进制的原码、反码、补码">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?15" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="二进制的原码、反码、补码"></a></div><div class="recent-post-info"><a class="article-title" href="/article/c3d59d66.html" title="二进制的原码、反码、补码">二进制的原码、反码、补码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-10T12:06:58.000Z" title="发表于 2020-12-10 20:06:58">2020-12-10</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">
+计算机在任何情况下都只能识别二进制
+计算机在底层存储数据的时候，一律存储的是”二进制的补码形式”，计算机采用补码形式存储数据的原因是：补码形式效率最高
+什么是补码？二进制有：原码 反码 补码1234567891011//对于一个正数来说：二进制原码、反码、补码是同一个，完全相同int i = 1;对应的二进制原码：00000000 00000000 00000000 00000001对应的二进制反码：00000000 00000000 00000000 00000001对应的二进制补码：00000000 00000000 00000000 00000001//对一个负数来说：二进制原码、反码、补码是什么关系呢？byte i = -1;对应的二进制原码： 10000001对应的二进制反码(符号位不变，其他位取反)： 11111110对应的二进制补码(反码+1)： 11111111
+问题：byte b = (byte)150；输出多少？？123456789101112byte b = (byte)150;//这里输出-106    128 64 32 16 8 4 2 0    1    ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/23a3bd72.html" title="异常">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?17" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="异常"></a></div><div class="recent-post-info"><a class="article-title" href="/article/23a3bd72.html" title="异常">异常</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-09T11:41:47.000Z" title="发表于 2020-12-09 19:41:47">2020-12-09</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">什么是异常
+软件程序运行过程中，非常可能遇到问题，这就是异常。
+异常指程序运行中出现的不期而遇的各种状况，如：文件找不到，网络连接失败等。
+异常发生在程序运行期间，它影响了正常的程序执行流程。
+一次在Java中以类的形式存在，每一个异常类都可以创建异常对象
+
+异常分为三种类型
+检查性异常最具代表的检查性异常时用户错误或问题引发的异常，这是程序员无法预见的，例如打开了一个不存在的文件时，一个异常就发送了，这些异常在编译时不能被简单地忽略。
+运行时异常运行时异常时可以被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+错误错误不是异常，而实脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+
+异常体系结构
+Java把异常当作对象来处理，并定义一个基类java.long.Throwable做为所有异常的超类。
+在Java API中已定义了很多异常类，这些异常类分为两大类
+错误 Error
+异常 Exception
+
+
+
+异常处理机制处理异常的五个关键字
+
+try  （try…catch，可以只有try）
+catch   ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/9bc01b38.html" title="内部类">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?16" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="内部类"></a></div><div class="recent-post-info"><a class="article-title" href="/article/9bc01b38.html" title="内部类">内部类</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-09T11:41:33.000Z" title="发表于 2020-12-09 19:41:33">2020-12-09</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">什么是内部类内部类就是在一个类的内部在定义一个类，比如，A类中定义一个B类，那么B类相对于A类来说就成为内部类，而A类相对B类来说就是外部类。
+内部类分为4种成员内部类12345678910111213141516171819202122232425public class Outer&#123;    private int id;    public void out()&#123;        System.out.println(&quot;这是外部类&quot;);    &#125;    class Inner&#123;        public void in()&#123;            System.out.println(&quot;这是内部类的方法&quot;);        &#125;        //内部类可获取外部的私有属性        public void getID()&#123;            System.out.println(id);        &#125;    &#125;&#125;public cla ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/5951da65.html" title="接口">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?14" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="接口"></a></div><div class="recent-post-info"><a class="article-title" href="/article/5951da65.html" title="接口">接口</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-08T11:05:06.000Z" title="发表于 2020-12-08 19:05:06">2020-12-08</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">什么是接口
+普通类：只有具体实现
+抽象类：具体实现和规范(抽象方法)都有！
+接口：只有规范！
+
+
+接口就是规范，定义的是一组规则，体现了现实世界中”如果你是…则必须能…”的思想。如果你是天使则必须能飞。
+接口的本质是契约，就像我们人类的法律一样。制定好后大家都遵守。
+
+123456//定义接口的关键字 interfacepublic interface UserService&#123;        //接口里面的方法都是抽象的 public abstract    public abstract void run();&#125;
+12345678//类 可以实现接口 通过关键字 implements//实现接口就不必重写接口里面的方法public class UserServiceImpl implements UserService&#123;        public void run()&#123;            &#125;&#125;
+==总结==
+接口就是一种约束(接口里面只能出现抽象方法和常量)
+接口定义了一些方法，可以让不同的人实现
+接口里面定义的方法都 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/d1212574.html" title="类与对象的关系">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?13" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="类与对象的关系"></a></div><div class="recent-post-info"><a class="article-title" href="/article/d1212574.html" title="类与对象的关系">类与对象的关系</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-08T11:03:26.000Z" title="发表于 2020-12-08 19:03:26">2020-12-08</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">什么是类？类是一种抽象的数据类型，它是对某一类事物整体描述/定义，但是并不能代表每一个具体的事物
+什么是对象？对象是抽象概念的具体实例
+创建与初始化对象
+使用new关键字创建对象
+使用new关键字创建的时候，除了分配内存空间之外，还会给创建好的对象进行默认初始化以及对类中构造器的调用。
+类中的构造器也被称为构造方法，是在进行创建对象的时候必须要调用的。并且构造器有以下两个特点  
+必须和类的名称相同
+必须没有返回类型，也不能写void
+
+
+
+重点：类里面定义了有参构造器就必须定义一个无参构造器
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/3dbae4e.html" title="抽象类">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?12" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="抽象类"></a></div><div class="recent-post-info"><a class="article-title" href="/article/3dbae4e.html" title="抽象类">抽象类</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-07T11:48:07.000Z" title="发表于 2020-12-07 19:48:07">2020-12-07</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">什么是抽象类
+abstract修饰符可以用来修饰方法也可以修饰类，如果修饰方法，那么该方法就是抽象方法，如果修饰类那么该类就是抽象。
+抽象类中可以没有抽象方法，但是有抽象方法的类一定要声明为抽象类。
+抽象类，不能使用new关键字来创建对象，它是用来让子类继承的。
+抽象方法，只有方法的声明，没有方法的实现，它是用来让子类实现的。
+子类继承抽象类，那么就必须要实现抽象类没有实现的抽象方法，否则该子类也要声明为抽象类。
+抽象类里面可以写普通方法。
+
+1234567//abstract 抽象类public abstract class Action&#123;        //约束·有人帮忙实现    //abstract 抽象方法，只有 方法名称 没有方法实现    public abstract void doSomething();&#125;
+12345678//抽象类的方法必须要有继承它的子类去实现public class A extends Action&#123;        @Override    public void doSomething()&#123;       ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/ce244871.html" title="static关键字">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?11" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="static关键字"></a></div><div class="recent-post-info"><a class="article-title" href="/article/ce244871.html" title="static关键字">static关键字</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-06T12:12:53.000Z" title="发表于 2020-12-06 20:12:53">2020-12-06</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">类加载12345678910111213141516171819public class Test&#123;    &#123;        System.out.println(&quot;匿名代码块&quot;);    &#125;    static&#123;        System.out.println(&quot;静态代码块&quot;);    &#125;        public Test()&#123;        System.out.println(&quot;构造方法&quot;);    &#125;        public static void main(String[] ages)&#123;        Test test = new Test();        System.out.println(&quot;===============&quot;);        Test test = new Test();    &#125;&#125;
+输出结果:123456静态代码块匿名代码块构造方法============= ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/article/7867351e.html" title="面向对象的3大特征">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?10" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面向对象的3大特征"></a></div><div class="recent-post-info"><a class="article-title" href="/article/7867351e.html" title="面向对象的3大特征">面向对象的3大特征</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-05T09:01:36.000Z" title="发表于 2020-12-05 17:01:36">2020-12-05</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">封装
+该露的露，该藏的藏
+ 我们程序设计追求高内聚，低耦合。高内聚就是类的内部数据操作细节自己完成，不允许外部干涉；低耦合：仅量暴露少量的方法给我外部使用
+
+封装（数据的隐藏）
+ 通常，应静止直接访问一个对象中的实际表示，而应通过操作接口来访问，这称为信息隐藏。
+
+
+记住这句话就够了：属性私有，get/set
+封装的核心private私有化
+封装的意义
+提高程序的安全性，保护数据
+隐藏代码的实现细节
+统一接口
+系统可维护性增加
+
+继承
+继承的本质是对某一批类的抽象，从而实现对现实世界更好的建模。
+extends的意思是”扩展”。子类是分类的扩展。
+Java中类只有单继承，没有多继承！
+继承是类和类之间的一种关系。除此之外，类和类之间的关系还有依赖、组合、聚合等。
+继承关系的两个类，一个为子类（派生类），一个为父类（基类）。子类继承父类，使用关键字extends来表示。
+子类和父类之间，从意义上讲应该具有”is a”的关系。  
+
+重点：
+
+object类  
+super  
+方法重写 
+
+继承注意
+super注意点：
+
+super调用父类的构造方法，必须在构造方法的第一个
+super必 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/article/c5d97b3b.html" title="什么是面向过程、面向对象">     <img class="post_bg" src="http://api.mtyqx.cn/api/random.php?9" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="什么是面向过程、面向对象"></a></div><div class="recent-post-info"><a class="article-title" href="/article/c5d97b3b.html" title="什么是面向过程、面向对象">什么是面向过程、面向对象</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-12-04T12:13:01.000Z" title="发表于 2020-12-04 20:13:01">2020-12-04</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/java/%E5%9F%BA%E7%A1%80/">基础</a></span></div><div class="content">面向过程思想
+步骤清晰简单，第一步做什么，第二步做什么。
+
+面对过程适合处理一些较为简单的问题。
+
+面向过程都是有因果关系的，比如，因为A所以才有B….
+
+
+面向过程的缺点：高耦合,可扩展性差，一步错步步错。
+面向过程的优点：对于小型项目，效率较高，不用抽取对象，可直接编码。
+什么是OOA、OOD、OOP
+OOA 面向对象分析
+OOD 面向对象设计
+OOP 面向对象编码
+
+面向对象思想
+物以类聚，分类的思维模式，思考问题首先会解决问题需要哪些分类，然后对这些分类进行单独思考。最后才对某个分类下的细节进行面向过程的思考。
+
+面向对象适合处理复杂的问题，适合处理需要多人协作的问题!
+
+对于描述复杂的事物，为了从宏观上把握、从整体上合理分析，我们需要使用面向对象的思路来分析整个系统。但是，具体到微观操作，仍然需要面向过程的思路去处理。
+
+
+什么是面向对象
+面向对象编程的本质就是：以类的方式组织代码，以对象的组织（封装）数据
+
+抽象（抽象就是抽取事物的相同点）
+
+封装（封装可以被认为是一个保护屏障，防止该类的代码和数据被外部类定义的代码随机访问。要访问该类的代码和数据，必须通过严格的接口控制） ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/my-zhb/CDN/blog/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">七月</div><div class="author-info__description">起心动念皆是因,当下所受皆是果</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">38</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:myiszhb@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=410808509" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS订阅"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">大家好我是七月，请多多关照！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/article/a464cc4f.html" title="ubuntu开启root登录"><img src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ubuntu开启root登录"/></a><div class="content"><a class="title" href="/article/a464cc4f.html" title="ubuntu开启root登录">ubuntu开启root登录</a><time datetime="2022-03-03T12:07:43.000Z" title="发表于 2022-03-03 20:07:43">2022-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/5cf35c25.html" title="Java中文汉字转拼音工具类"><img src="http://api.mtyqx.cn/api/random.php?28" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java中文汉字转拼音工具类"/></a><div class="content"><a class="title" href="/article/5cf35c25.html" title="Java中文汉字转拼音工具类">Java中文汉字转拼音工具类</a><time datetime="2021-12-09T05:34:00.000Z" title="发表于 2021-12-09 13:34:00">2021-12-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/5cf352a9.html" title="mybatis中sql语句调用Java代码"><img src="http://api.mtyqx.cn/api/random.php?27" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mybatis中sql语句调用Java代码"/></a><div class="content"><a class="title" href="/article/5cf352a9.html" title="mybatis中sql语句调用Java代码">mybatis中sql语句调用Java代码</a><time datetime="2021-12-07T03:21:00.000Z" title="发表于 2021-12-07 11:21:00">2021-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/2db9fece.html" title="rabbitmq学习(三)"><img src="http://api.mtyqx.cn/api/random.php?31" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitmq学习(三)"/></a><div class="content"><a class="title" href="/article/2db9fece.html" title="rabbitmq学习(三)">rabbitmq学习(三)</a><time datetime="2021-08-06T11:20:27.000Z" title="发表于 2021-08-06 19:20:27">2021-08-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/article/534adee5.html" title="rabbitmq学习(二)"><img src="http://api.mtyqx.cn/api/random.php?30" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="rabbitmq学习(二)"/></a><div class="content"><a class="title" href="/article/534adee5.html" title="rabbitmq学习(二)">rabbitmq学习(二)</a><time datetime="2021-08-06T11:03:10.000Z" title="发表于 2021-08-06 19:03:10">2021-08-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">30</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/mybatis/"><span class="card-category-list-name">mybatis</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">基础</span><span class="card-category-list-count">23</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%B7%A5%E5%85%B7%E7%B1%BB/"><span class="card-category-list-name">工具类</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%B9%B6%E5%8F%91/"><span class="card-category-list-name">并发</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"><span class="card-category-list-name">微服务</span><span class="card-category-list-count">4</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/mybatis-plus/"><span class="card-category-list-name">mybatis-plus</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%AD%E9%97%B4%E4%BB%B6/"><span class="card-category-list-name">中间件</span><span class="card-category-list-count">3</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/certbot/" style="font-size: 1.1em; color: #999">certbot</a> <a href="/tags/emqx/" style="font-size: 1.1em; color: #999">emqx</a> <a href="/tags/io/" style="font-size: 1.1em; color: #999">io</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/juc/" style="font-size: 1.1em; color: #999">juc</a> <a href="/tags/mybatis/" style="font-size: 1.1em; color: #999">mybatis</a> <a href="/tags/mybatis-plus/" style="font-size: 1.2em; color: #999da3">mybatis-plus</a> <a href="/tags/rabbitmq/" style="font-size: 1.3em; color: #99a1ac">rabbitmq</a> <a href="/tags/ubuntu/" style="font-size: 1.1em; color: #999">ubuntu</a> <a href="/tags/%E5%B7%A5%E5%85%B7%E7%B1%BB/" style="font-size: 1.1em; color: #999">工具类</a> <a href="/tags/%E5%BC%82%E5%B8%B8/" style="font-size: 1.1em; color: #999">异常</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.4em; color: #99a5b6">微服务</a> <a href="/tags/%E8%AF%81%E4%B9%A6/" style="font-size: 1.1em; color: #999">证书</a> <a href="/tags/%E9%9B%86%E5%90%88/" style="font-size: 1.1em; color: #999">集合</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/12/"><span class="card-archive-list-date">十二月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">七月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">20</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">38</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">115k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-03-31T07:40:36.765Z"></div></div></div></div></div></div></main><footer id="footer" style="background: rgba(255,255,255,0)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 七月</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})
+setTimeout(function(){preloader.endLoading();}, 3000);</script></div><div class="js-pjax"></div><script data-pjax defer src="/js/custom/fixed_card_widget.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '700ms');
+    arr[i].setAttribute('data-wow-delay', '700ms');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://unpkg.zhimg.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
